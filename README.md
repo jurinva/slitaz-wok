@@ -43,6 +43,3 @@ You will find the package created under the /home/slitaz/packages directory.
 
 
 
-## License
-
-This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
