@@ -2,6 +2,7 @@
 Receipts for Slitaz
 
 ## Set up your SliTaz development environment
+[from here](http://tuxdiary.com/2013/08/17/quick-guide-to-start-cooking-slitaz-packages/)
 
 1. Install the development package and it’s dependencies with the following command:
 ```bash
