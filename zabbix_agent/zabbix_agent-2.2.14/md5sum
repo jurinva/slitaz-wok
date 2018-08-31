@@ -1,0 +1,9 @@
+9881f0b6f358a12f3f134d6dbb932356  /usr/bin/zabbix_sender
+85e7f79c20fc99b2cd13903f9dc34738  /usr/bin/zabbix_get
+8397ca0d6350aada8c2174507eb5f16b  /usr/sbin/zabbix_agentd
+b5e10aa569b9ce88c481f02779a41aec  /usr/sbin/zabbix_agent
+19476d700114a9a99cb2edf5e46bddc0  /usr/share/man/man1/zabbix_sender.1
+bfcf07d3c6a513aa97236fcbc6a122e6  /usr/share/man/man1/zabbix_get.1
+cf6b17d898bf1661b6c52b3552f668df  /usr/share/man/man8/zabbix_agentd.8
+b425d39297a8bdd86a89f853fb440e64  /etc/zabbix/zabbix_agent.conf
+ea8f56d093543e4db26a4b83fbe419ae  /etc/zabbix/zabbix_agentd.conf

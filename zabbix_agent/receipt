@@ -1,0 +1,38 @@
+# SliTaz package receipt.
+
+PACKAGE="zabbix_agent"
+PROJECT="zabbix"
+VERSION="2.2.14"
+CATEGORY="development"
+MAINTAINER="jurinva@mail.ru"
+LICENSE="BSD GPL2 LGPL2"
+SHORT_DESC="Zabbix agent"
+WEB_SITE="https://github.com/jurinva/slitaz-wok"
+TARBALL="$PROJECT-$VERSION.tar.gz"
+WGET_URL="$WEB_SITE/$TARBALL"
+HOST_ARCH="i386"
+CONFIG_FILES="/etc/zabbix/*.conf"
+
+CONFIGURE_ARGS="--with-net-snmp --enable-agent"
+DEPENDS=""
+
+# Rules to configure and make the package.
+compile_rules()
+{
+	cd $src
+	./configure $CONFIGURE_ARGS &&
+	make &&
+	make install
+}
+	
+# Rules to gen a SliTaz package suitable for Tazpkg.
+genpkg_rules()
+{
+	mkdir -p $fs/usr
+	mkdir -p $fs/etc
+	cp -a $install/usr/etc $fs/etc
+	mv $fs/etc/etc $fs/etc/zabbix
+	cp -a $install/usr/bin $fs/usr
+	cp -a $install/usr/sbin $fs/usr
+	cp -a $install/usr/share $fs/usr
+}
